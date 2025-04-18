@@ -1,0 +1,230 @@
+{
+  "primary_pipeline" : "dcb9ce45-80e3-48d5-9e6f-64cbebf3cb4b",
+  "pipelines" : [ {
+    "nodes" : [ {
+      "outputs" : [ {
+        "id" : "35dd2562-97ea-4306-9534-6a2a892b35a1",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "e0c61806-1863-4e9f-bb49-014430c50fcb"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : 1
+            }
+          },
+          "additionalProperties" : {
+            "enableAcp" : true
+          }
+        },
+        "schema_ref" : "aa9d914d-353a-4476-a311-bcf6b9d1a24e",
+        "parameters" : {
+          "records" : 10,
+          "buf_mode" : "default",
+          "enableSchemalessDesign" : false
+        }
+      } ],
+      "op" : "PxRowGenerator",
+      "id" : "188e4f78-5d2c-4ee4-a4ed-2ff14f872932",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxRowGenerator.svg",
+          "x_pos" : 142.56,
+          "label" : "Row_Generator_1",
+          "y_pos" : 190.07999999999998
+        }
+      },
+      "parameters" : {
+        "combinability" : "auto",
+        "output_count" : 1,
+        "input_count" : 0,
+        "execmode" : "default_seq",
+        "preserve" : -3
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : -1
+            }
+          }
+        }
+      } ],
+      "op" : "PxPeek",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "188e4f78-5d2c-4ee4-a4ed-2ff14f872932",
+          "type_attr" : "PRIMARY",
+          "id" : "e0c61806-1863-4e9f-bb49-014430c50fcb",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ {
+                "image" : "/data-intg/flows/graphics/flows/link-output-handle--default-selected.svg",
+                "temporary" : false,
+                "outline" : false,
+                "distance" : 0,
+                "x_pos" : -10,
+                "id" : "dec-3",
+                "position" : "source",
+                "y_pos" : -10,
+                "class_name" : "linkStartImage"
+              }, {
+                "image" : "/data-intg/flows/graphics/flows/link-marking--specific-partitioning.svg",
+                "temporary" : false,
+                "outline" : false,
+                "distance" : 0,
+                "width" : 50,
+                "tooltip" : "Specific partition",
+                "x_pos" : -15,
+                "id" : "dec-9C",
+                "position" : "middle",
+                "y_pos" : 4,
+                "height" : 50
+              }, {
+                "temporary" : false,
+                "label_allow_return_key" : "save",
+                "label_single_line" : true,
+                "width" : 100,
+                "label_editable" : true,
+                "x_pos" : -18,
+                "id" : "dec-8",
+                "position" : "middle",
+                "label" : "Link_1",
+                "y_pos" : -20,
+                "height" : 80
+              } ],
+              "class_name" : "linkStyle__runMetricsLinkDefaultStyle___ixW31"
+            }
+          },
+          "link_name" : "Link_1",
+          "port_id_ref" : "35dd2562-97ea-4306-9534-6a2a892b35a1"
+        } ],
+        "id" : "63be539a-998e-44de-b9b0-f3fd199ef0ca",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "inPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : 1
+            }
+          }
+        },
+        "schema_ref" : "aa9d914d-353a-4476-a311-bcf6b9d1a24e",
+        "parameters" : {
+          "runtime_column_propagation" : 0
+        }
+      } ],
+      "id" : "5ff1ab7e-2cb5-414d-b721-41ce19ade41d",
+      "type" : "execution_node",
+      "app_data" : {
+        "datastage" : {
+          "inputs_order" : "63be539a-998e-44de-b9b0-f3fd199ef0ca",
+          "outputs_order" : ""
+        },
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxPeek.svg",
+          "x_pos" : 332.64,
+          "label" : "Peek_1",
+          "y_pos" : 190.07999999999998
+        }
+      },
+      "parameters" : {
+        "all" : " ",
+        "columns" : " ",
+        "enableFlowAcpControl" : true,
+        "part_type" : "auto",
+        "combinability" : "auto",
+        "OutputlinkOrderingList" : [ ],
+        "nrecs" : 10,
+        "selection" : " ",
+        "InputlinkOrderingList" : [ {
+          "link_label" : "0",
+          "link_name" : "Link_1"
+        } ],
+        "output_count" : 0,
+        "execmode" : "default_par",
+        "input_count" : 1,
+        "name" : "name",
+        "dataset" : " "
+      }
+    } ],
+    "description" : "",
+    "id" : "dcb9ce45-80e3-48d5-9e6f-64cbebf3cb4b",
+    "app_data" : {
+      "datastage" : {
+        "nls_map_name" : "",
+        "nls_locale" : "OFF"
+      },
+      "ui_data" : {
+        "comments" : [ ]
+      }
+    },
+    "runtime_ref" : "pxOsh"
+  } ],
+  "external_paramsets" : [ ],
+  "json_schema" : "https://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "schemas" : [ {
+    "id" : "aa9d914d-353a-4476-a311-bcf6b9d1a24e",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 100,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : "",
+        "max_length" : 100,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "COLUMN_1",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "CHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      },
+      "type" : "string"
+    } ]
+  } ],
+  "doc_type" : "pipeline",
+  "id" : "6bba1df6-c362-47ce-ac4d-8c4b4f9c6468",
+  "app_data" : {
+    "datastage" : {
+      "timestamp_format" : "",
+      "decimal_separator" : "",
+      "flowRunPriorityQueue" : "Medium",
+      "time_format" : "",
+      "date_format" : "",
+      "message_handlers" : [ ],
+      "version" : "3.0.5"
+    },
+    "additionalProperties" : {
+      "transInputLinkMapper" : { },
+      "ELTDropdown" : {
+        "id" : "nesting",
+        "label" : "Generate nested SQL",
+        "value" : "NESTED_QUERY"
+      },
+      "disableParamsCacheOnFlow" : false,
+      "rcpLinkList" : [ ],
+      "globalAcp" : true,
+      "enableRCP" : false,
+      "isNewTransActive" : false,
+      "enableSchemaLessDesign" : false,
+      "runMode" : "ETL"
+    }
+  },
+  "version" : "3.0",
+  "parameters" : {
+    "local_parameters" : [ ]
+  }
+}

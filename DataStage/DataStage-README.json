@@ -1,0 +1,59 @@
+{
+  "project" : "DataStageGitTest",
+  "projectId" : "9b67221b-0f15-4baf-8c54-45b1619232aa",
+  "created_by" : "cpadmin",
+  "environment" : "cp4d",
+  "services_info" : [ {
+    "name" : "ds-canvas",
+    "version" : "512.0.10"
+  }, {
+    "name" : "ds-cas-lite",
+    "version" : "512.0.3"
+  }, {
+    "name" : "ds-codegen",
+    "version" : "512.0.7"
+  }, {
+    "name" : "ds-flow-runtime",
+    "version" : "512.0.2"
+  }, {
+    "name" : "ds-flows",
+    "version" : "512.0.7"
+  }, {
+    "name" : "ds-migration",
+    "version" : "512.0.4"
+  }, {
+    "name" : "ds-px-runtime",
+    "version" : "512.0.7"
+  }, {
+    "name" : "DSAssets",
+    "version" : "512.0.3"
+  }, {
+    "name" : "qs-ruleset",
+    "version" : "512.0.2"
+  } ],
+  "assets" : [ {
+    "name" : "FirstFlow.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "SecondFlow.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "SecondFlow",
+    "type" : "px_executables",
+    "location" : "SecondFlow"
+  }, {
+    "name" : "SecondFlow",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "9b67221b-0f15-4baf-8c54-45b1619232aa-DataStage_settings",
+    "type" : "data_intg_project_settings"
+  }, {
+    "name" : "FirstFlow",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "FirstFlow",
+    "type" : "px_executables",
+    "location" : "FirstFlow"
+  } ],
+  "flow_job_mapping" : [ ]
+}

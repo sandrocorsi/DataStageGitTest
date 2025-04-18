@@ -1,0 +1,33 @@
+{
+  "metadata" : {
+    "name" : "FirstFlow.DataStage job",
+    "asset_id" : "12b9479b-31d9-43cf-9784-6534e03b88aa",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref_type" : "data_intg_flow",
+      "configuration" : {
+        "env_variables" : [ ],
+        "flow_limits" : {
+          "warn_limit" : 100
+        },
+        "runPriorityQueue" : "Medium",
+        "env_type" : ""
+      },
+      "last_run_initiator" : "deprecated field",
+      "last_run_time" : "deprecated field",
+      "last_run_status" : "deprecated field",
+      "last_run_status_timestamp" : 0,
+      "future_scheduled_runs" : [ ],
+      "enable_notifications" : true,
+      "project_name" : "DataStageGitTest",
+      "asset_ref" : "06649079-2ba7-46f2-bc80-d6507ae573c9",
+      "parameter_sets" : [ ],
+      "schedule_id" : "",
+      "schedule_creator_id" : "",
+      "flow_name" : "FirstFlow"
+    }
+  }
+}

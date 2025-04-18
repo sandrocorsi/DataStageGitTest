@@ -1,0 +1,51 @@
+{
+  "project" : {
+    "jobNameSuffix" : ".DataStage job",
+    "runEnvironmentId" : "",
+    "runPriorityQueue" : "Medium",
+    "runRemoteEngineEnforcement" : false,
+    "testDataProperties" : {
+      "testCaseJobNameSuffix" : ".DataStageTestCase Job",
+      "testDataConnectionType" : ""
+    },
+    "saveFrequency" : "save_changes_automatically",
+    "formatTimeString" : "",
+    "flowLimits" : {
+      "warnLimit" : 100
+    },
+    "testDataConnectionId" : "",
+    "nlsCollate" : "OFF",
+    "disableParamsRefreshCache" : false,
+    "runMessageHandlerId" : "",
+    "formatDecimalSeparator" : "",
+    "testDataBasePath" : "",
+    "sequenceNameSuffix" : ".DataStage sequence",
+    "defineParameters" : false,
+    "optimizedSequenceNameSuffix" : ".DataStage sequence job",
+    "runArtifactRetention" : {
+      "enabled" : false
+    },
+    "gitIntegration" : {
+      "enableGit" : true,
+      "gitProvider" : "git",
+      "gitFolder" : "DataStage",
+      "gitToken" : "{dsnextenc}N3EKPvM29BlImvTvZyvpcSraUqz+VlNSB7uh7CenJuxKtEIUsj7KUDN32oAoTU7v",
+      "gitURL" : "https://github.com/sandrocorsi/DataStageGitTest.git",
+      "gitBranch" : "dev"
+    },
+    "thresholdLimits" : { },
+    "formatDateString" : "",
+    "metricsRepository" : {
+      "enableMetrics" : false,
+      "metricsRetention" : {
+        "enabled" : false
+      },
+      "connection" : {
+        "datasource_type" : "e1c23729-99d8-4407-b3df-336e33ffdc82"
+      },
+      "enableAdvancedFind" : false
+    },
+    "nlsMap" : "",
+    "formatTimestampString" : ""
+  }
+}
