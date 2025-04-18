@@ -21,7 +21,7 @@
         },
         "schema_ref" : "3b329a30-1d41-49a2-9a56-3d623f2d764d",
         "parameters" : {
-          "records" : 10,
+          "records" : 20,
           "buf_mode" : "default",
           "enableSchemalessDesign" : false
         }
@@ -33,7 +33,7 @@
         "ui_data" : {
           "image" : "/data-intg/flows/graphics/palette/PxRowGenerator.svg",
           "x_pos" : 174.24,
-          "label" : "Row_Generator_1",
+          "label" : "Row_Generator_20_rows",
           "y_pos" : 142.56
         }
       },

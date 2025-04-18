@@ -2,13 +2,14 @@
   "project" : "DataStageGitTest",
   "projectId" : "9b67221b-0f15-4baf-8c54-45b1619232aa",
   "created_by" : "cpadmin",
+  "created_at" : "2025-04-18T10:07:09.123583397Z",
   "environment" : "cp4d",
   "services_info" : [ {
     "name" : "ds-canvas",
     "version" : "512.0.10"
   }, {
-    "name" : "ds-cas-lite",
-    "version" : "512.0.3"
+    "name" : "ds-flows",
+    "version" : "512.0.7"
   }, {
     "name" : "ds-codegen",
     "version" : "512.0.7"
@@ -16,24 +17,32 @@
     "name" : "ds-flow-runtime",
     "version" : "512.0.2"
   }, {
-    "name" : "ds-flows",
-    "version" : "512.0.7"
-  }, {
     "name" : "ds-migration",
     "version" : "512.0.4"
   }, {
-    "name" : "ds-px-runtime",
-    "version" : "512.0.7"
-  }, {
     "name" : "DSAssets",
     "version" : "512.0.3"
+  }, {
+    "name" : "ds-cas-lite",
+    "version" : "512.0.3"
+  }, {
+    "name" : "ds-px-runtime",
+    "version" : "512.0.7"
   }, {
     "name" : "qs-ruleset",
     "version" : "512.0.2"
   } ],
   "assets" : [ {
+    "name" : "FirstFlow.DataStage job.",
+    "type" : "job",
+    "location" : ""
+  }, {
     "name" : "FirstFlow.DataStage job",
     "type" : "job"
+  }, {
+    "name" : "FirstFlow.",
+    "type" : "data_intg_flow",
+    "location" : ""
   }, {
     "name" : "SecondFlow.DataStage job",
     "type" : "job"
